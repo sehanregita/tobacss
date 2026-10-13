@@ -1,0 +1,125 @@
+/* Import Font Modern dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Pengaturan Dasar & Latar Belakang Berwarna Gradasi */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Mengatur jenis font[span_0](start_span)[span_0](end_span) */
+    background: linear-gradient(135deg, #e0f7fa 0%, #fff3e0 100%); /* Gradasi Biru Laut ke Oranye */
+    margin: 0;
+    padding: 40px 20px;
+    color: #333333;
+}
+
+/* Kotak Utama / Kartu Artikel */
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 16px; /* Sudut melengkung */
+    box-shadow: 0 10px 25px rgba(0, 150, 136, 0.15); /* Bayangan lembut bernuansa tosika */
+    border-top: 6px solid #00acc1; /* Garis aksen warna biru di atas kartu */
+}
+
+/* Pengaturan Judul Artikel */
+.judul-artikel {
+    color: #00796b; /* Warna Hijau Toska Tua */
+    text-align: center; /* Meratakan judul di tengah[span_1](start_span)[span_1](end_span) */
+    font-size: 30px; /* Ukuran font[span_2](start_span)[span_2](end_span) */
+    font-weight: 700; /* Ketebalan font[span_3](start_span)[span_3](end_span) */
+    text-transform: uppercase; /* Membuat teks huruf besar[span_4](start_span)[span_4](end_span) */
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Efek bayangan teks[span_5](start_span)[span_5](end_span) */
+}
+
+/* Meta Informasi */
+.meta-info {
+    text-align: center;
+    color: #0097a7;
+    font-size: 13px;
+    font-style: italic; /* Mengubah gaya font[span_6](start_span)[span_6](end_span) */
+    background-color: #e0f7fa;
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin: 0 auto 25px auto;
+    width: fit-content;
+}
+
+/* Mengatur Float untuk Menampilkan Gambar di Sebelah Kiri Paragraf[span_7](start_span)[span_7](end_span) */
+.gambar-artikel {
+    width: 320px;
+    float: left; /* Posisi gambar melayang di kiri[span_8](start_span)[span_8](end_span) */
+    margin-right: 25px; /* Jarak antara gambar dan teks[span_9](start_span)[span_9](end_span) */
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border: 3px solid #ffe0b2; /* Bingkai warna oranye muda */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi halus */
+}
+
+/* Efek Hover Saat Gambar Disorot Kursor */
+.gambar-artikel:hover {
+    transform: scale(1.03); /* Gambar sedikit membesar saat disorot */
+    box-shadow: 0 10px 20px rgba(255, 152, 0, 0.3);
+}
+
+/* Format Paragraf */
+.paragraf-utama, .paragraf-isi, .paragraf-penutup {
+    font-size: 15px;
+    line-height: 1.8; /* Jarak antar baris kalimat[span_10](start_span)[span_10](end_span) */
+    text-align: justify; /* Rata kiri-kanan[span_11](start_span)[span_11](end_span) */
+    color: #424242;
+    text-indent: 30px; /* Jarak alinea awal paragraf[span_12](start_span)[span_12](end_span) */
+    margin-bottom: 15px;
+}
+
+/* Teks Highlight */
+.highlight {
+    font-weight: bold; /* Mengatur ketebalan font[span_13](start_span)[span_13](end_span) */
+    color: #e65100; /* Warna Oranye Tua */
+    background-color: #ffe0b2; /* Latar belakang oranye lembut */
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Mengatur Bagian Sumber & Link Interaktif[span_14](start_span)[span_14](end_span) */
+.sumber-link {
+    margin-top: 35px;
+    clear: both; /* Membersihkan efek float gambar */
+    padding-top: 20px;
+    border-top: 2px dashed #b2ebf2; /* Garis putus-putus warna biru muda */
+    text-align: center;
+}
+
+/* Mengatur Status Hyperlink Bergaya Tombol[span_15](start_span)[span_15](end_span) */
+.link-berita {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.link-berita:link {
+    background-color: #ff9800; /* Warna dasar tombol oranye */
+    color: #ffffff; /* Status link biasa warna putih[span_16](start_span)[span_16](end_span) */
+    text-decoration: none; /* Menghilangkan garis bawah[span_17](start_span)[span_17](end_span) */
+}
+
+.link-berita:visited {
+    background-color: #f57c00; /* Warna setelah dikunjungi[span_18](start_span)[span_18](end_span) */
+    color: #ffffff;
+}
+
+.link-berita:hover {
+    background-color: #00acc1; /* Warna berubah menjadi biru tosia saat disorot[span_19](start_span)[span_19](end_span) */
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 172, 193, 0.4);
+    transform: translateY(-2px); /* Efek tombol naik sedikit */
+}
+
+.link-berita:active {
+    background-color: #00838f; /* Warna saat tombol diklik[span_20](start_span)[span_20](end_span) */
+}
